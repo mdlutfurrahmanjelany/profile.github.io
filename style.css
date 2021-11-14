@@ -1,0 +1,74 @@
+body{
+
+	background: url(bg.jpg);
+	background-size: cover;
+	}
+
+
+.all{width:200px;float: left;}
+
+.image img{
+	width:100%
+}
+
+.test{position: relative;}
+.demo h2{position: absolute;
+				top: 0;
+				left: 0;
+				margin:0;
+				}
+
+/*before-after*/
+
+
+.before-after  a{position:relative;display: block;}
+.before-after  a:before{position: absolute;
+							top: 0;
+							left:0;
+							content: " ";
+							background: red;
+							height: 100%;
+							width: 100%;
+							opacity: .0;
+							transition: .6s;
+							transform: scaleY(0);
+							}
+.before-after  a:hover:before{
+							opacity: .3;
+							transform: scale(1);
+}
+.lift-style a{position: relative;display:block;}
+
+.lift-style a:before{position: absolute;
+					
+					top:0;
+					left: 0;
+					content: "";
+					background: red;
+					height: 100%;
+					width: 0;
+					opacity: .5;
+					transition: 0.5s;
+					transform: (0);
+					
+					}
+
+.lift-style a:hover:before{width: 50%}
+
+.lift-style a:after{position: absolute;
+					
+					top:0;
+					right:  0;
+					content: "";
+					background: red;
+					height: 100%;
+					width: 0;
+					opacity: .5;
+					transition: 0.5s;
+					transform: (0);
+					
+					}
+
+.lift-style a:hover:after{
+					width: 50%
+					}
